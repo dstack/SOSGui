@@ -33,11 +33,15 @@
         </li>
       </ul>
       <div id="tools" style="color: #000;" ng-init="test = 'on'">
-        <div class="tool-icon" ng-click="emailPageLink()">
+        <div class="tool-icon" ng-click="openNotes()" ng-class="{'disabled': !currentlyPlaying}">
+          <img src="/img/interface/notes.png" alt="notes" />
+          <span data-i18n="Notes" ></span>
+        </div>
+        <div class="tool-icon" ng-click="emailPageLink()" ng-class="{'disabled': !currentlyPlaying}">
           <img src="/img/interface/email.png" alt="email" />
           <span data-i18n="Email" ></span>
         </div>
-        <div class="tool-icon" ng-click="gotoPage()">
+        <div class="tool-icon" ng-click="gotoPage()" ng-class="{'disabled': !currentlyPlaying}">
           <img src="/img/interface/share.png" alt="link" />
           <span data-i18n="Link" ></span>
         </div>

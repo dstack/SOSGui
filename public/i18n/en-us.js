@@ -18,5 +18,15 @@
     "key": "Link",
     "value": "Link",
     "description": "Share Tool button text"
+  },
+  {
+    "key": "Notes",
+    "value": "Notes",
+    "description": "Notes Tool button text"
+  },
+  {
+    "key": "Align",
+    "value": "Align",
+    "description": "Align Tool button text"
   }
 ]

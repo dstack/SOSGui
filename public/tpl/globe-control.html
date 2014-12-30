@@ -1,0 +1,16 @@
+<div>
+  <div id="globe-target"></div>
+  <div id="alignment-overlay" ng-hide="!alignmentOverlay">
+    <div id="slider-ct">
+      <slider floor="-180" ceiling="180" step="1" precision="0" ng-model="alignmentDeg"></slider>
+    </div>
+  </div>
+  <div id="alignment-overlay-btn" ng-click="alignmentOverlay = !alignmentOverlay" ng-hide="alignmentOverlay">
+    <div class="circle"></div>
+    <span data-i18n="Align" ></span>
+  </div>
+  <div class="debug" ng-show="debug">
+    Foci: {{foci.lat}} + {{foci.long}}<br/>
+    Globe: {{globeFoci.lat}} + {{globeFoci.long}}<br/>
+  </div>
+</div>

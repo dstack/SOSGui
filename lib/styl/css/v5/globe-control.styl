@@ -7,3 +7,40 @@ globe-control
   margin 0px 0px media-bar-height left-width
   background globe-back-gray
   z-index 1
+  #globe-target
+    absolute top 0px left 0px
+    width 100%
+    height 100%
+  #alignment-overlay
+    background rgba(0,0,0,0.75)
+    absolute top 0px left 0px
+    width 100%
+    height 100%
+    z-index 2
+    #slider-ct
+      position relative
+      top calc(50% - 17px)
+      padding 0px 15px
+      slider span
+        &.bar
+          background red
+        &.pointer
+          background rgba(red, 0)
+          &:after
+            background red
+          &:hover
+            background rgba(red, 0.15)
+          &.active
+            background rgba(red, 0.25)
+
+  #alignment-overlay-btn
+    absolute top 0px right 0px
+    background light-gray
+    padding 12px
+    color #000
+    .circle
+      width w = 22px
+      height w
+      margin 0px auto 4px auto
+      background blue
+      border-radius (w / 2)
